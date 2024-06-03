@@ -1,7 +1,0 @@
-require('lua.edgy')
-require('lua.neogen')
-require('lua.neoscroll')
-require('lua.supertab')
-require('lua.theme')
-require('lua.undotree')
-require('lua.vim-tmux')

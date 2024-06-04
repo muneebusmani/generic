@@ -20,7 +20,14 @@ return {
         ['q'] = "quit",
       },
     })
-
+    if vim.fn.exists("*persistent_undo") then
+      local target_path = vim.fn.expand("~/.undodir")
+      if vim.fn.isdirectory(target_path) == 0 then
+        vim.fn.mkdir(target_path, "p", 0700)
+      end
+      vim.o.undodir = target_path
+      vim.o.undofile = true
+    end
   end,
   keys = { -- load the plugin only when using it's keybinding:
     { "<leader>ut", "<cmd>lua require('undotree').toggle()<cr>" },

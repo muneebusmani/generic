@@ -69,6 +69,21 @@ return {
         open = "SymbolsOutlineOpen",
       },
     },
+    right = {
+      {
+        ft = "undotree",
+        pinned = true,
+        open = "lua require('undotree').toggle()",
+      },
+      {
+        ft = "dbui",
+        pinned = true,
+        open = "DBUI",
+      },
+    },
+    options = {
+      right = { size = 40 },
+    },
     animate = {
       enabled = true,
       fps = 60, -- frames per second

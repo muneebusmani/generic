@@ -5,6 +5,8 @@ return {
   { import = "lazyvim.plugins.extras.lsp.none-ls" },
   { import = "lazyvim.plugins.extras.lsp.neoconf" },
   { import = "lazyvim.plugins.extras.lang.typescript" },
+  { import = "lazyvim.plugins.extras.formatting.prettier" },
+  { import = "lazyvim.plugins.extras.linting.eslint" },
   -- { import = "lazyvim.plugins.extras.coding.mini-surround" },
   -- { import = "lazyvim.plugins.extras.coding.luasnip" },
 }
